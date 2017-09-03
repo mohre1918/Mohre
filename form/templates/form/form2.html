@@ -1,0 +1,115 @@
+
+
+<!--{% block head %}-->
+
+<!--{% endblock %}-->
+
+
+<!--{% block form2 %}-->
+<!--&lt;!&ndash;<div class="container">&ndash;&gt;-->
+
+<!--<script>-->
+    <!--var options = [];-->
+
+<!--$( '.dropdown-menu a' ).on( 'click', function( event ) {-->
+
+   <!--var $target = $( event.currentTarget ),-->
+       <!--val = $target.attr( 'data-value' ),-->
+       <!--$inp = $target.find( 'input' ),-->
+       <!--idx;-->
+
+   <!--if ( ( idx = options.indexOf( val ) ) > -1 ) {-->
+      <!--options.splice( idx, 1 );-->
+      <!--setTimeout( function() { $inp.prop( 'checked', false ) }, 0);-->
+   <!--} else {-->
+      <!--options.push( val );-->
+      <!--setTimeout( function() { $inp.prop( 'checked', true ) }, 0);-->
+   <!--}-->
+
+   <!--$( event.target ).blur();-->
+
+   <!--console.log( options );-->
+   <!--return false;-->
+<!--});-->
+<!--</script>-->
+
+
+<form class="form-inline" action="/form/input/" method="POST">
+	{% csrf_token %}
+
+	<!--<div class="container-fluid">-->
+	  <!--<div class="row">-->
+	       <!--<div class="col-sm-3">-->
+			     <!--<div class="btn-group">-->
+				       <!--<button type="button" class="btn btn-primary">Cities</button>-->
+					  <!--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+					    <!--<span class="caret"></span>-->
+					    <!--<span class="sr-only">Toggle Dropdown</span>-->
+					  <!--</button>-->
+					<!--<ul class="dropdown-menu">-->
+					  <!--<li><a href="#" class="large" data-value="Tehran" tabIndex="-1"><input type="checkbox"/>&nbsp;Tehran </a></li>-->
+					  <!--<li><a href="#" class="large" data-value="Alborz" tabIndex="-1"><input type="checkbox"/>&nbsp;Alborz </a></li>-->
+					  <!--<li><a href="#" class="large" data-value="Shiraz" tabIndex="-1"><input type="checkbox"/>&nbsp;Shiraz </a></li>-->
+					  <!--<li><a href="#" class="large" data-value="Mashahad" tabIndex="-1"><input type="checkbox"/>&nbsp;Mashahad</a></li>-->
+					  <!--<li><a href="#" class="large" data-value="Mazandaran" tabIndex="-1"><input type="checkbox"/>&nbsp;Mazandar</a></li>-->
+					  <!--<li><a href="#" class="large" data-value="Boshehr" tabIndex="-1"><input type="checkbox"/>&nbsp;Boshehr</a></li>-->
+					<!--</ul>-->
+			     <!--</div>-->
+			     <!--<div class="btn-group">-->
+				       <!--<button type="button" class="btn btn-primary">Source Operator</button>-->
+					  <!--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+					    <!--<span class="caret"></span>-->
+					    <!--<span class="sr-only">Toggle Dropdown</span>-->
+					  <!--</button>-->
+					<!--<ul class="dropdown-menu">-->
+					  <!--<li><a href="#" class="large" data-value="Shatel" tabIndex="-1"><input type="checkbox"/>&nbsp;Shatel </a></li>-->
+					  <!--<li><a href="#" class="large" data-value="MCI" tabIndex="-1"><input type="checkbox"/>&nbsp;MCI </a></li>-->
+					  <!--<li><a href="#" class="large" data-value="MTN" tabIndex="-1"><input type="checkbox"/>&nbsp;MTN </a></li>-->
+					  <!--<li><a href="#" class="large" data-value="Ritel" tabIndex="-1"><input type="checkbox"/>&nbsp;Ritel</a></li>-->
+					  <!--<li><a href="#" class="large" data-value="TCI" tabIndex="-1"><input type="checkbox"/>&nbsp;TCI</a></li>-->
+					  <!--<li><a href="#" class="large" data-value="TIC" tabIndex="-1"><input type="checkbox"/>&nbsp;TIC</a></li>-->
+					<!--</ul>-->
+			     <!--</div>-->
+			     <!--<div class="btn-group">-->
+				       <!--<button type="button" class="btn btn-primary">Source Operator</button>-->
+					  <!--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+					    <!--<span class="caret"></span>-->
+					    <!--<span class="sr-only">Toggle Dropdown</span>-->
+					  <!--</button>-->
+					<!--<ul class="dropdown-menu">-->
+					  <!--<li><a href="#" class="large" data-value="Shatel" tabIndex="-1"><input type="checkbox"/>&nbsp;Shatel </a></li>-->
+					  <!--<li><a href="#" class="large" data-value="MCI" tabIndex="-1"><input type="checkbox"/>&nbsp;MCI </a></li>-->
+					  <!--<li><a href="#" class="large" data-value="MTN" tabIndex="-1"><input type="checkbox"/>&nbsp;MTN </a></li>-->
+					  <!--<li><a href="#" class="large" data-value="Ritel" tabIndex="-1"><input type="checkbox"/>&nbsp;Ritel</a></li>-->
+					  <!--<li><a href="#" class="large" data-value="TCI" tabIndex="-1"><input type="checkbox"/>&nbsp;TCI</a></li>-->
+					  <!--<li><a href="#" class="large" data-value="TIC" tabIndex="-1"><input type="checkbox"/>&nbsp;TIC</a></li>-->
+					<!--</ul>-->
+			     <!--</div>-->
+			<!--</div>-->
+
+			<!--<div class="col-sm-6">-->
+			    <!--<div class="form-group">-->
+			        <!--<label for="Start Date">Start Date</label>-->
+			        <!--<input type="date" class="form-control" name = 'start_date' id="Start Date" placeholder="Start Date">-->
+			    <!--</div>-->
+			    <!--<div class="form-group">-->
+			        <!--<label for="End Date">End Date</label>-->
+			        <!--<input type="date" class="form-control" name='end_date' id="End Date" placeholder="End Date">-->
+			    <!--</div>-->
+
+				  <button type="submit" class="btn btn-success">APPLY</button>
+			<!--</div>-->
+	  <!--&lt;!&ndash;</div>&ndash;&gt;-->
+	<!--</div>-->
+
+
+
+</form>
+	<!--{% block chart%}-->
+	<!--{% endblock %}-->
+
+
+
+
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--{% endblock %}-->

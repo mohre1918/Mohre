@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title></title>
+{% endblock %}
+
+
+{% block body %}
+<!--<div class="container">-->
+
+<style>
+p.solid {border-style: solid;}
+</style>
+  <h1>Welcome!</h1>
+  <!--<h2>Login</h2>-->
+
+<form class="form-inline" action="/form/input/" method="POST">
+    {% csrf_token %}
+<br><br>
+<div class="col-sm-10">
+    <p> Choose Cities!</p>
+</div>
+<div class="col-sm-12">
+    <p class="solid">
+          <div class="checkbox">
+              <label>
+                <input type="checkbox" name="MGW" id="MGW" value="mgw_frs_vali" checked>
+                FARS
+              </label>
+            </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" name="MGW" id="MGW" value="mgw_abz_krj">
+                ALBORZ
+            </label>
+        </div>
+      </p>
+</div>
+
+<br><br><br><br><br><br>
+
+<div class="col-sm-6">
+    <p> Choose Source Operator!</p>
+</div>
+      <div class="col-sm-6">
+    <p> Choose Destination Operator!</p>
+</div>
+      <div class="col-sm-6">
+    <p class="solid">
+          <div class="checkbox">
+              <label>
+                <input type="checkbox" name="source_operator" id="Source_Operator" value="mtn" checked>
+                mtn
+              </label>
+            </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" name="source_operator" id="Source_Operator" value="mci">
+                mci
+            </label>
+        </div>
+                  <div class="checkbox">
+            <label>
+                <input type="checkbox" name="source_operator" id="Source_Operator" value="shatel">
+                shatel
+            </label>
+        </div>
+      </p>
+</div>
+
+      <div class="col-sm-6">
+    <p class="solid">
+          <div class="checkbox">
+              <label>
+                <input type="checkbox" name="destination_operator" id="Destination_Operator" value="mtn" checked>
+                mtn
+              </label>
+            </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" name="destination_operator" id="Destination_Operator" value="mci">
+                mci
+            </label>
+        </div>
+                  <div class="checkbox">
+            <label>
+                <input type="checkbox" name="destination_operator" id="Destination_Operator" value="shatel">
+                shatel
+            </label>
+                  </div>
+          </p>
+      </div>
+<br><br><br><br><br><br>
+<div class="container">
+  <div class="form-group">
+    <label for="Start Date">Start Date</label>
+    <input type="date" class="form-control" name = 'start_date' id="Start Date" placeholder="Start Date">
+  </div>
+  <div class="form-group">
+    <label for="End Date">End Date</label>
+    <input type="date" class="form-control" name='end_date' id="End Date" placeholder="End Date">
+  </div>
+  <button type="submit" class="btn btn-success">APPLY</button>
+</div>
+  </form>
+
+
+
+
+
+
+
+
+<!--</div>-->
+{% endblock %}
