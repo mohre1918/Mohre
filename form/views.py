@@ -15,4 +15,4 @@ def get_input(request):
     start_date = request.POST.getlist('start_date')
     end_date = request.POST.getlist('end_date')
     a = ['   ']
-    return HttpResponse(mgw+a+source_operator+a+destination_operator+a+start_date+a+end_date)
+    return "salam"
